@@ -88,10 +88,11 @@ Here is the current best practice to achieve this.
    the first point of the next step.
 5) In the project `MyProject` you need to modify the following things:
    * Make sure `lean-toolchain` contains the string `leanprover/lean4:v4.16.0` with the same version your shared mathlib is at.
-   * In `lakefile.lean`, replace the line `require "leanprover-community" / "mathlib"` with
+   * In `lakefile.lean`, add a `from` part to the `require "leanprover-community" / "mathlib"` line, as
 
      ```
-     require mathlib from ".." / "relative" / "path" / "to" / "mathlib4"
+     require "leanprover-community" / "mathlib"
+       from ".." / "relative" / "path" / "to" / "mathlib4"
      ```
    * Now inside `MyProject` you need to clean up lake:
 
