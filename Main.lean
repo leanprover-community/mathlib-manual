@@ -15,6 +15,11 @@ def plausible := {{
     <script defer="defer" data-domain="lean-lang.org" src="https://plausible.io/js/script.outbound-links.js"></script>
   }}
 
+open Verso.Output.Html in
+def extraJs := {{
+    <script src="static/print.js"></script>
+  }}
+
 def main :=
   manualMain (%doc MathlibManual) (config := config)
 where
@@ -29,11 +34,7 @@ where
       "/static/fonts/source-sans/source-sans-3.css",
       "/static/fonts/noto-sans-mono/noto-sans-mono.css"
     ],
-    extraJs := [
-      -- Print stylesheet improvements
-      {filename := "/static/print.js"}
-    ],
-    extraHead := #[plausible],
+    extraHead := #[plausible, extraJs],
     emitTeX := false,
     emitHtmlSingle := true, -- for proofreading
     logo := some "/static/lean_logo.svg",

@@ -3,6 +3,8 @@ import Std
 import Lean
 import Lake
 
+import Lake.Load.Manifest
+
 open Verso.Genre Manual
 open Verso.Genre.Manual.InlineLean
 
