@@ -9,8 +9,6 @@ import Lean
 
 open Lean Verso.Doc.Elab
 
-namespace MathlibManual
-
 /-- Display the time the manual was built in the verso text. -/
 @[role_expander now]
 def now : RoleExpander

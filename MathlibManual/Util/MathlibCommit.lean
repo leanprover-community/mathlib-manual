@@ -9,8 +9,6 @@ import VersoManual
 
 open Lean Verso.Doc.Elab
 
-namespace MathlibManual
-
 /-- Get Mathlib commit and create a link. -/
 @[role_expander mathlibCommit]
 def mathlibCommit : RoleExpander

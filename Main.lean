@@ -37,7 +37,7 @@ def staticCss := {{
   }}
 
 def main :=
-  manualMain (%doc Manual) (config := config) (extraSteps := [extractExamples])
+  manualMain (%doc Manual) (config := config) (extraSteps := [])
 where
   config := {
     extraFiles := [("static", "static")],
