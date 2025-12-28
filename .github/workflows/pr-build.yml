@@ -15,4 +15,3 @@ jobs:
         uses: leanprover/lean-action@v1
         with:
           build-args: "MathlibManual"
-
