@@ -78,8 +78,3 @@ If you see two tactics which are almost identical, consider adding `tactic_alt T
 
 :::all_tactics (from := "y")
 :::
-
-Hey, I'm only here as a hack. Please ignore me and that thing below.
-
--- TODO: without anything here verso gets a parsing error...?
-{optionDocs trace.grind.split}

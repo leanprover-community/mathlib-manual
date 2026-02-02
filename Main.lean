@@ -43,7 +43,7 @@ where
     extraFiles := [("static", "static")],
     extraHead := #[plausible, staticJs, staticCss],
     emitTeX := false,
-    emitHtmlSingle := true, -- for proofreading
+    emitHtmlSingle := EmitHtml.no, -- for proofreading
     logo := some "/static/lean_logo.svg",
     sourceLink := some "https://github.com/leanprover-community/mathlib-manual",
     issueLink := some "https://github.com/leanprover-community/mathlib-manual/pulls",

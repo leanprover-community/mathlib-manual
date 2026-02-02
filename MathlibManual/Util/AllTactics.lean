@@ -53,9 +53,7 @@ def all_tactics : DirectiveExpander
     -- create an array containing one verso block per tactic
     let blocks : Array (TSyntax `term) ← tacs.mapM fun tactic => do
       Doc.PointOfInterest.save (← getRef) tactic.userName
-      let doc := match tactic.userName with
-      | "tfae_have" => tactic.docString.getD "" |>.replace "***\n" "" -- TODO
-      | _ => tactic.docString.getD ""
+      let doc := tactic.docString.getD ""
       let content ← do
         let some mdAst := doc >>= MD4Lean.parse
           | throwError s!"Failed to parse docstring of {tactic.userName} as Markdown:\n{doc}"
