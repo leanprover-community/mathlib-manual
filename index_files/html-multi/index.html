@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      (function(){
+  const {protocol:proto, host:hostName, pathname:path, search:srch, hash:hsh} = window.location;
+  if (!(path.endsWith("/") || path.endsWith(".html"))) {
+    window.location.replace(`${proto}//${hostName}${path}/${srch}${hsh}`);
+  }
+})()</script>
+    <base href="./"><meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Mathlib Manual</title><link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="verso-vars.css">
+    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="print.css">
+    <link rel="stylesheet" href="fonts/source-serif/source-serif-text.css">
+    <link rel="stylesheet" href="fonts/source-code-pro/source-code-pro.css">
+    <link rel="stylesheet" href="fonts/source-sans/source-sans-3.css">
+    <link rel="stylesheet" href="fonts/noto-sans-mono/noto-sans-mono.css">
+    </head>
+  <body>
+    <header>
+      <div class="header-logo-wrapper">
+        <a href="" id="logo"><img src="lean_logo.svg"></a></div>
+      <div class="header-title-wrapper">
+        <a href="" class="header-title"><h1>
+            Mathlib Manual</h1>
+          </a></div>
+      </header>
+    <label for="toggle-toc" id="toggle-toc-click"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></label><div class="with-toc">
+      <div class="toc-backdrop" onclick="document.getElementById('toggle-toc-click')?.click()"></div>
+      <nav id="toc">
+        <input type="checkbox" id="toggle-toc"><div class="first">
+          <a href="" class="toc-title"><h1>
+              Mathlib Manual</h1>
+            </a><div class="split-tocs">
+            <div class="split-toc book">
+              <div class="title">
+                <span class="no-toggle"></span><span class="">Table of Contents</span></div>
+              </div>
+            </div>
+          </div>
+        <div class="last">
+          <ul id="meta-links">
+            <li>
+              <a href="https://github.com/leanprover-community/mathlib-manual">Source Code</a></li>
+            <li>
+              <a href="https://github.com/leanprover-community/mathlib-manual/pulls">Report Issues</a></li>
+            </ul>
+          </div>
+        </nav>
+      <main><div class="content-wrapper">
+          <nav class="prev-next-buttons">
+            <div></div>
+            <div></div>
+            </nav>
+          <section>
+            <div class="titlepage">
+              <h1>
+                 Mathlib Manual<span class="permalink-widget inline"><a href="find/?domain=Verso.Genre.Manual.section&amp;name=mathlib-manual" title="Permalink">🔗</a></span></h1>
+              <div class="authors"></div>
+              <p>
+                <strong>This project has now been deprecated!</strong></p>
+              <ul>
+                <li>
+                  <p>
+                    List of all Tactics: now integrated in the <a href="https://leanprover-community.github.io/mathlib4_docs/tactics.html">Mathlib Documentation</a></p>
+                  </li>
+                <li>
+                  <p>
+                    The other resources have been moved to the <a href="https://github.com/leanprover-community/mathlib4/wiki/">Mathlib Wiki</a></p>
+                  <ul>
+                    <li>
+                      <p>
+                        <a href="https://github.com/leanprover-community/mathlib4/wiki/Project-setup:-globally-shared-mathlib-installation">globally shared mathlib</a></p>
+                      </li>
+                    <li>
+                      <p>
+                        <a href="https://github.com/leanprover-community/mathlib4/wiki/Project-setup:-using-local-development-version-of-a-dependency">local dev dependency</a></p>
+                      </li>
+                    <li>
+                      <p>
+                        <a href="https://github.com/leanprover-community/mathlib4/wiki/Project-setup:-following-stable-releases">following stable releases</a>
+</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          <nav class="prev-next-buttons">
+            <div></div>
+            <div></div>
+            </nav>
+          </div>
+        </main></div>
+    </body>
+  </html>
+
